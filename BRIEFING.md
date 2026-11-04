@@ -8,7 +8,7 @@
 - **Instagram:** @emporiumstone
 - **CNPJ:** 62.104.337/0001-04
 - **Horário:** seg a sex 08:00–12:00 e 13:00–17:00 · sáb 08:00–11:30 · dom fechado
-- **Materiais:** mármores, granitos, quartzos, ultra compactos, NanoGlass e quartzitos — das pedras naturais às mais exóticas
+- **Materiais:** mármores, granitos, quartzos, ultra compactos, Branco Prime e quartzitos — das pedras naturais às mais exóticas
 - **Frase do cliente:** "Honramos nossos compromissos e trabalhamos de uma forma prestativa, ótimo acabamento é o nosso forte, para que haja a satisfação imediata do cliente!"
 
 ## Chamadas retiradas dos flyers
@@ -52,7 +52,7 @@ Navbar → Hero → selos → faixa de materiais → Materiais (fichas) → Port
 
 ```
 Crie uma landing page estilo site institucional para a Emporium Stone Marmoraria (Rua São Miguel, 208, Varadouro/Centro, João Pessoa-PB, CEP 58010-270; WhatsApp (83) 99914-7198; Instagram @emporiumstone; CNPJ 62.104.337/0001-04; CEO Jaderson Santos).
-A marmoraria trabalha das pedras naturais aos materiais mais exóticos: mármores, granitos, quartzos, ultra compactos, NanoGlass e quartzitos. Serviços: bancadas de cozinha, pias e lavatórios, pisos e revestimentos, áreas gourmet, escadas, mesas e peças sob medida.
+A marmoraria trabalha das pedras naturais aos materiais mais exóticos: mármores, granitos, quartzos, ultra compactos, Branco Prime e quartzitos. Serviços: bancadas de cozinha, pias e lavatórios, pisos e revestimentos, áreas gourmet, escadas, mesas e peças sob medida.
 Horário: seg–sex 08:00–12:00 e 13:00–17:00; sáb 08:00–11:30; dom fechado (mostrar "aberto/fechado agora" no fuso de Fortaleza).
 Direção visual: showroom de pedras × ficha técnica de obra. Tom branco na maior parte, algumas seções pretas; um wallpaper de mármore cobre o fundo inteiro, bem clarinho, visível em todas as seções sem atrapalhar o conteúdo. Verde do logo (#18b85c → #a6f272) só como acento. Tipografia Marcellus (títulos) + Manrope (texto). Corte diagonal do logo repetido nas molduras. Nada de roxo, Inter ou ícones Lucide; ícones SVG próprios.
 Chamadas: "Seu projeto em boas mãos", "Qualidade em cada detalhe", "Precisão que se vê, qualidade que fica", "Transformamos pedras em ambientes únicos, com acabamento de alto padrão". Selos: qualidade garantida, compromisso com o prazo, pedras nacionais e importadas, atendimento personalizado. Frase do CEO: "Honramos nossos compromissos e trabalhamos de uma forma prestativa, ótimo acabamento é o nosso forte, para que haja a satisfação imediata do cliente!"
