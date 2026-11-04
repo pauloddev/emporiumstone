@@ -1,0 +1,4 @@
+Contact: https://wa.me/5583999147198
+Expires: 2027-11-04T00:00:00.000Z
+Preferred-Languages: pt-BR
+Canonical: https://emporiumstone.vercel.app/.well-known/security.txt
