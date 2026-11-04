@@ -391,6 +391,40 @@ footer .legal{grid-column:1/-1;border-top:1px solid #1d2120;padding-top:20px;dis
 .rv{transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
 .js .rv.pre{opacity:.001;transform:translateY(22px)}
 
+
+/* obra em destaque: Pure White */
+.pw{display:grid;gap:clamp(36px,5vw,72px);align-items:center}
+@media(min-width:980px){.pw{grid-template-columns:.85fr 1.15fr}}
+.pw-media{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:14px}
+.pw-media .v{grid-row:1/3;position:relative;height:100%;min-height:0;overflow:hidden;background:#111}
+.pw-media:not(.wide) figure{aspect-ratio:4/5}
+.pw-media .v video{width:100%;height:100%;object-fit:cover;cursor:pointer}
+.pw-media figure{margin:0;position:relative;overflow:hidden;background:#222;min-height:0}
+.pw-media figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.pw-media figure:hover img{transform:scale(1.05)}
+.pw-media figcaption{padding:26px 10px 8px}
+.pw-media figcaption b{font-size:14px}
+.pw-media .tag{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.62);color:#fff;padding:8px 12px;border-radius:999px;font:700 11px/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase}
+.pw-media .tag i{width:7px;height:7px;border-radius:50%;background:var(--green-hi);animation:blink 1.4s infinite}
+.pw.flip .pw-copy{order:2}
+.light .pw-spec{background:var(--line)}
+.light .pw-spec div{background:#fff}
+.light .pw-spec small{color:#7b827e}
+.light .pw-spec b{color:var(--ink)}
+.light .pw-copy h2 em{background-image:var(--gold-deep)}
+.pw-media.wide{grid-template-columns:1fr 1fr;grid-template-rows:auto auto}
+.pw-media.wide .big{grid-column:1/-1;grid-row:auto;position:relative;margin:0;aspect-ratio:4/3;overflow:hidden;background:#222}
+.pw-media.wide .big img{width:100%;height:100%;object-fit:cover}
+.pw-media.wide figure:not(.big){aspect-ratio:4/5}
+.pw-copy{display:grid;gap:22px;align-content:start}
+.pw-copy h2 em{font-style:normal;background:var(--gold-grad);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s ease-in-out infinite}
+.pw-spec{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.14)}
+.pw-spec div{background:#0c0d0d;padding:16px 14px;display:grid;gap:6px;min-width:0}
+.pw-spec small{font:700 10px/1.2 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:#9aa09c}
+.pw-spec b{font:400 18px/1.2 var(--f-display);color:#fff}
+@media(max-width:979px){.pw.flip .pw-copy{order:0}}
+@media(max-width:520px){.pw-spec{grid-template-columns:1fr}.pw-media{gap:10px}}
+
 /* abertura com o logo */
 .intro{position:fixed;inset:0;z-index:100;background:var(--nero);display:grid;place-items:center;transition:transform .9s cubic-bezier(.7,0,.2,1),opacity .9s}
 .intro::before{content:"";position:absolute;inset:0;background:url(img/marmore-fundo-escuro.jpg) center/cover no-repeat;opacity:.6}
@@ -443,6 +477,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid #1d2120;padding-top:20px;dis
     </a>
     <nav class="menu" aria-label="Seções">
       <a href="#materiais">Materiais</a>
+      <a href="#pure-white">Destaques</a>
       <a href="#portfolio">Portfólio</a>
       <a href="#projeto">Projeto 3D</a>
       <a href="#avaliacoes">Avaliações</a>
@@ -522,7 +557,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid #1d2120;padding-top:20px;dis
           <dl class="spec"><dt>Origem</dt><dd>Superfície industrializada</dd><dt>Brilha em</dt><dd>Lavatórios, cozinhas, ilhas</dd></dl><a class="mat-cta" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20um%20or%C3%A7amento%20em%20quartzo." target="_blank" rel="noopener">Orçar em quartzo<svg class="ico"><use href="#i-right"/></svg></a></div>
         </article>
         <article class="mat rv">
-          <div class="sw" data-n="INDUSTRIALIZADO" style="background-image:url(img/p-mesa-ultra-compacto.jpg)"></div>
+          <div class="sw" data-n="INDUSTRIALIZADO" style="background-image:url(img/ultra-compacto-branco.jpg)"></div>
           <div class="body"><h3>Ultra compacto</h3><p>Lâminas finas e muito resistentes a calor, manchas e riscos. Dá para usar em tampos, mesas e fachadas.</p>
           <dl class="spec"><dt>Origem</dt><dd>Superfície sinterizada</dd><dt>Brilha em</dt><dd>Mesas, bancadas, revestimentos</dd></dl><a class="mat-cta" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20um%20or%C3%A7amento%20em%20ultra%20compacto." target="_blank" rel="noopener">Orçar em ultra compacto<svg class="ico"><use href="#i-right"/></svg></a></div>
         </article>
@@ -545,6 +580,99 @@ footer .legal{grid-column:1/-1;border-top:1px solid #1d2120;padding-top:20px;dis
         <a class="chip" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20um%20or%C3%A7amento%20de%20%C3%A1reas%20gourmet." target="_blank" rel="noopener"><svg class="ico"><use href="#i-grill"/></svg>Áreas gourmet</a>
         <a class="chip" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20um%20or%C3%A7amento%20de%20escadas." target="_blank" rel="noopener"><svg class="ico"><use href="#i-stairs"/></svg>Escadas</a>
         <a class="chip" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20um%20or%C3%A7amento%20de%20mesas%20e%20pe%C3%A7as%20sob%20medida." target="_blank" rel="noopener"><svg class="ico"><use href="#i-cube"/></svg>Mesas e peças sob medida</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- OBRA EM DESTAQUE: QUARTZO PURE WHITE -->
+  <section class="sec dark" id="pure-white" aria-labelledby="h-pw">
+    <div class="wrap pw">
+      <div class="pw-copy">
+        <span class="eyebrow">Obra em destaque</span>
+        <h2 class="h2" id="h-pw">Cozinha inteira em quartzo <em>Pure White</em></h2>
+        <p class="lead">Um branco puro, uniforme e sem veios, que deixa a cozinha clara e com cara de nova por muitos anos. A bancada acompanha a parede em L e contorna a janela, com a cuba de inox embutida e o recorte do cooktop por indução feitos sob medida.</p>
+        <ul class="points">
+          <li><svg class="ico"><use href="#i-ruler"/></svg><div><b>Bancada em L sob medida</b><span>Peças casadas na quina, seguindo a parede e a janela.</span></div></li>
+          <li><svg class="ico"><use href="#i-target"/></svg><div><b>Recortes precisos</b><span>Cuba embutida e cooktop encaixados no milímetro.</span></div></li>
+          <li><svg class="ico"><use href="#i-shield"/></svg><div><b>Fácil de limpar</b><span>Quartzo de baixíssima porosidade, que não mancha com o uso do dia a dia.</span></div></li>
+        </ul>
+        <div class="pw-spec">
+          <div><small>Material</small><b>Quartzo Pure White</b></div>
+          <div><small>Ambiente</small><b>Cozinha</b></div>
+          <div><small>Peças</small><b>Bancada, frontão e recortes</b></div>
+        </div>
+        <div><a class="btn btn-wa" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20uma%20bancada%20em%20quartzo%20Pure%20White." target="_blank" rel="noopener"><span class="dot"></span>Quero uma bancada assim</a></div>
+      </div>
+      <div class="pw-media rv">
+        <div class="v cut"><video src="video/pure-white.mp4" poster="video/pure-white.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Vídeo da cozinha com bancada em quartzo Pure White"></video><span class="tag"><i></i>Pure White</span></div>
+        <figure><img src="img/pure-white-1.jpg" alt="Bancada em L de quartzo Pure White com cuba de inox, vista da janela" width="720" height="900" loading="lazy"><figcaption><b>Cuba embutida</b></figcaption></figure>
+        <figure><img src="img/pure-white-2.jpg" alt="Tampo longo em quartzo Pure White com cooktop embutido" width="720" height="900" loading="lazy"><figcaption><b>Tampo com cooktop</b></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- OBRA EM DESTAQUE: ULTRA COMPACTO TAJ MAHAL -->
+  <section class="sec light" id="taj-mahal" aria-labelledby="h-tm">
+    <div class="wrap pw flip">
+      <div class="pw-copy">
+        <span class="eyebrow">Obra em destaque</span>
+        <h2 class="h2" id="h-tm">Bancada em ultra compacto <em>Taj Mahal</em></h2>
+        <p class="lead">O visual nobre do quartzito Taj Mahal, com fundo creme e veios dourados suaves, numa lâmina ultra compacta que aguenta panela quente, faca e mancha. Bancada longa com cuba de inox embutida, cooktop e lixeira de embutir, tudo recortado sob medida.</p>
+        <ul class="points">
+          <li><svg class="ico"><use href="#i-gem"/></svg><div><b>Veios contínuos</b><span>Peças escolhidas para o desenho correr de ponta a ponta.</span></div></li>
+          <li><svg class="ico"><use href="#i-target"/></svg><div><b>Três recortes no mesmo tampo</b><span>Cuba, cooktop e lixeira alinhados e encaixados no milímetro.</span></div></li>
+          <li><svg class="ico"><use href="#i-shield"/></svg><div><b>Resistência do ultra compacto</b><span>Não risca, não mancha e suporta calor no uso de todo dia.</span></div></li>
+        </ul>
+        <div class="pw-spec">
+          <div><small>Material</small><b>Ultra compacto Taj Mahal</b></div>
+          <div><small>Ambiente</small><b>Cozinha</b></div>
+          <div><small>Peças</small><b>Bancada e recortes</b></div>
+        </div>
+        <div><a class="btn btn-wa" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20uma%20bancada%20em%20ultra%20compacto%20Taj%20Mahal." target="_blank" rel="noopener"><span class="dot"></span>Quero uma bancada assim</a></div>
+      </div>
+      <div class="pw-media rv">
+        <div class="v cut"><video src="video/taj-mahal.mp4" poster="video/taj-mahal.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Vídeo da bancada em ultra compacto Taj Mahal"></video><span class="tag"><i></i>Taj Mahal</span></div>
+        <figure><img src="img/taj-mahal-1.jpg" alt="Bancada longa em ultra compacto Taj Mahal com cuba de inox e cooktop" width="720" height="900" loading="lazy"><figcaption><b>Bancada completa</b></figcaption></figure>
+        <figure><img src="img/taj-mahal-2.jpg" alt="Detalhe dos veios do ultra compacto Taj Mahal ao redor da cuba" width="720" height="900" loading="lazy"><figcaption><b>Detalhe dos veios</b></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sec dark" id="itaunas" aria-labelledby="h-itaunas">
+    <div class="wrap pw">
+      <div class="pw-copy">
+        <span class="eyebrow">Obra em destaque</span>
+        <h2 class="h2" id="h-itaunas">Lavabo em granito <em>Itaúnas escovado</em></h2>
+        <p class="lead">Um bloco único de pedra flutuando na parede, com cuba esculpida e acabamento escovado, que deixa a superfície fosca e agradável ao toque. Com metais dourados, espelho iluminado e luz embaixo da peça, o lavabo virou o ponto alto da casa.</p>
+        <ul class="points"><li><svg class="ico"><use href="#i-gem"/></svg><div><b>Acabamento escovado</b><span>Textura fosca que valoriza o granito e disfarça marcas de água.</span></div></li><li><svg class="ico"><use href="#i-sink"/></svg><div><b>Cuba esculpida na pedra</b><span>Rampa interna com ralo oculto, sem emendas aparentes.</span></div></li><li><svg class="ico"><use href="#i-ruler"/></svg><div><b>Peça suspensa sob medida</b><span>Saia alta em meia-esquadria, iluminada por baixo.</span></div></li></ul>
+        <div class="pw-spec"><div><small>Material</small><b>Granito Itaúnas escovado</b></div><div><small>Ambiente</small><b>Lavabo</b></div><div><small>Peças</small><b>Cuba esculpida suspensa</b></div></div>
+        <div><a class="btn btn-wa" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20um%20lavabo%20em%20Ita%C3%BAnas%20escovado." target="_blank" rel="noopener"><span class="dot"></span>Quero um projeto assim</a></div>
+      </div>
+      <div class="pw-media rv">
+        <div class="v cut"><video src="video/itaunas.mp4" poster="video/itaunas.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Vídeo do lavabo em granito Itaúnas escovado"></video><span class="tag"><i></i>Itaúnas escovado</span></div>
+        <figure><img src="img/itaunas-1.jpg" alt="Lavabo com cuba esculpida em Itaúnas escovado, espelho iluminado e pendentes dourados" width="720" height="900" loading="lazy"><figcaption><b>Lavabo completo</b></figcaption></figure>
+        <figure><img src="img/itaunas-2.jpg" alt="Detalhe da cuba esculpida em Itaúnas escovado com ralo dourado" width="720" height="900" loading="lazy"><figcaption><b>Cuba esculpida</b></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec light" id="sandalus" aria-labelledby="h-sandalus">
+    <div class="wrap pw flip">
+      <div class="pw-copy">
+        <span class="eyebrow">Obra em destaque</span>
+        <h2 class="h2" id="h-sandalus">Ilha gourmet em quartzito <em>Sandalus</em></h2>
+        <p class="lead">Um dos quartzitos mais exóticos que trabalhamos: fundo escuro com veios em tons de madeira e bronze. A ilha foi revestida em cascata nos quatro lados, com os veios casados nas quinas, cuba embutida e recorte para o cooktop.</p>
+        <ul class="points"><li><svg class="ico"><use href="#i-gem"/></svg><div><b>Pedra exótica</b><span>Cada chapa é única; escolhemos as peças para o desenho ficar contínuo.</span></div></li><li><svg class="ico"><use href="#i-cube"/></svg><div><b>Ilha em cascata</b><span>Tampo e laterais em meia-esquadria, como um bloco só de pedra.</span></div></li><li><svg class="ico"><use href="#i-target"/></svg><div><b>Recortes sob medida</b><span>Cuba e cooktop alinhados no tampo.</span></div></li></ul>
+        <div class="pw-spec"><div><small>Material</small><b>Quartzito Sandalus</b></div><div><small>Ambiente</small><b>Cozinha gourmet</b></div><div><small>Peças</small><b>Ilha em cascata</b></div></div>
+        <div><a class="btn btn-wa" href="https://wa.me/5583999147198?text=Ol%C3%A1%2C%20Emporium%20Stone%21%20Quero%20um%20projeto%20em%20quartzito%20Sandalus." target="_blank" rel="noopener"><span class="dot"></span>Quero um projeto assim</a></div>
+      </div>
+      <div class="pw-media wide rv">
+        <figure class="big cut"><img src="img/sandalus-ilha.jpg" alt="Ilha de cozinha revestida em quartzito Sandalus com cuba embutida e torneira preta" width="1273" height="955" loading="lazy"><figcaption><b>Ilha em quartzito Sandalus</b></figcaption></figure>
+        <figure><img src="img/sandalus-1.jpg" alt="Detalhe da quina em meia-esquadria com veios casados do quartzito Sandalus" width="720" height="900" loading="lazy"><figcaption><b>Veios casados na quina</b></figcaption></figure>
+        <figure><img src="img/sandalus-2.jpg" alt="Detalhe do tampo em quartzito Sandalus com cuba embutida" width="720" height="900" loading="lazy"><figcaption><b>Tampo com cuba embutida</b></figcaption></figure>
       </div>
     </div>
   </section>
@@ -647,6 +775,28 @@ footer .legal{grid-column:1/-1;border-top:1px solid #1d2120;padding-top:20px;dis
           <li><svg class="ico"><use href="#i-cube"/></svg><div><b>Visualização em 3D</b><span>Gire a peça e veja cada lado antes de aprovar.</span></div></li>
           <li><svg class="ico"><use href="#i-ruler"/></svg><div><b>Área calculada pelo projeto</b><span>Metragem exata da pedra, sem chute no orçamento.</span></div></li>
           <li><svg class="ico"><use href="#i-check"/></svg><div><b>Esboço aperfeiçoado com você</b><span>Mudanças acontecem no desenho, não na pedra.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PERFEIÇÃO EM CADA DETALHE -->
+  <section class="sec dark" id="detalhe" aria-labelledby="h-det">
+    <div class="wrap solo">
+      <div class="solo-media rv">
+        <div class="vbox cut"><img src="img/perfeicao-detalhe.jpg" alt="Mãos firmes cortando uma chapa de granito escuro com a serra, com água espirrando" width="732" height="915" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+        <span class="tag"><svg class="ico" style="width:14px;height:14px"><use href="#i-saw"/></svg>Na oficina</span>
+        <div class="corner" aria-hidden="true"></div>
+      </div>
+      <div class="solo-copy">
+        <span class="eyebrow">Perfeição em cada detalhe</span>
+        <h2 class="h2" id="h-det">Cada corte feito com cuidado, <em>para um resultado impecável</em></h2>
+        <p class="lead">É na oficina que a peça ganha forma. O Jaderson acompanha o corte de perto, com a serra refrigerada a água para a pedra não lascar e a medida ficar exata. Um milímetro faz diferença na emenda, no encaixe da cuba e no brilho final.</p>
+        <ul class="points">
+          <li><svg class="ico"><use href="#i-target"/></svg><div><b>Corte refrigerado a água</b><span>Borda limpa, sem lascas e sem trincas na chapa.</span></div></li>
+          <li><svg class="ico"><use href="#i-ruler"/></svg><div><b>Medida conferida duas vezes</b><span>Antes de cortar e antes de instalar.</span></div></li>
+          <li><svg class="ico"><use href="#i-shield"/></svg><div><b>Segurança em primeiro lugar</b><span>Equipe com protetor auricular, óculos e máscara em todo corte.</span></div></li>
         </ul>
       </div>
     </div>
@@ -785,6 +935,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 
 /* Portfólio – carrossel */
 const fotos=[
+ ["ultra-compacto-branco","Ultra compacto branco","Lavatório suspenso com nicho"],
  ["cozinha-granito-preto","Cozinha em granito preto","Bancada com ilha"],
  ["lavatorio-quartzo-cinza-estelar","Quartzo Cinza Estelar","Lavatório com cuba esculpida"],
  ["cozinha-quartzo-bege","Cozinha em L","Cooktop e cuba embutidos"],
@@ -871,7 +1022,7 @@ document.querySelectorAll('#reviews .rev').forEach(c=>{const p=c.querySelector('
 document.getElementById('copyTel').onclick=async e=>{const b=e.currentTarget;try{await navigator.clipboard.writeText('(83) 99914-7198');b.textContent='Copiado'}catch(_){const r=document.createRange();r.selectNodeContents(document.getElementById('tel'));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selecionado'}setTimeout(()=>b.textContent='Copiar',2000)};
 
 /* Lightbox do portfólio */
-const zs=[...document.querySelectorAll('.feat figure,.car-track figure,.duo figure')];let zi=0,lastF=null;
+const zs=[...document.querySelectorAll('.pw-media figure,.feat figure,.car-track figure,.duo figure')];let zi=0,lastF=null;
 const lb=document.getElementById('lb'),lbI=document.getElementById('lbImg'),lbC=document.getElementById('lbCap');
 function show(i){zi=(i+zs.length)%zs.length;const f=zs[zi],im=f.querySelector('img');lbI.src=im.src;lbI.alt=im.alt;lbC.textContent=f.querySelector('figcaption b').textContent}
 zs.forEach((f,i)=>{f.classList.add('zoomable');f.tabIndex=0;f.setAttribute('role','button');f.setAttribute('aria-label','Ampliar: '+f.querySelector('figcaption b').textContent);
@@ -889,7 +1040,7 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce
  document.querySelectorAll('.rv').forEach(el=>{const r=el.getBoundingClientRect();if(r.top>innerHeight){el.classList.add('pre');io.observe(el)}});
 }
 /* Clique nos vídeos solo pausa ou retoma */
-document.querySelectorAll('.solo-media video').forEach(v=>{v.style.cursor='pointer';v.addEventListener('click',()=>v.paused?v.play():v.pause())});
+document.querySelectorAll('.solo-media video,.pw-media video').forEach(v=>{v.style.cursor='pointer';v.addEventListener('click',()=>v.paused?v.play():v.pause())});
 /* Pausar vídeos fora da tela */
 const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(v.closest('.vitem')&&!v.closest('.vitem.on'))return;v.play().catch(()=>{})}else v.pause()}),{threshold:.2});
 document.querySelectorAll('video').forEach(v=>vio.observe(v));
